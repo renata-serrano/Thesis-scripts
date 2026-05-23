@@ -21,7 +21,7 @@ raw_titles <- vroom(paste0(path, "title.basics.tsv.gz"), na = "\\N")
 
 hollywood_movies <- raw_titles %>% 
   filter(titleType == "movie" & tconst %in% hollywood_ids$tconst) %>% 
-  # UPDATED: Filter for 1990 onwards and non-adult 
+  # Filter for 1990 onwards and non-adult 
   filter(isAdult == 0 & !is.na(startYear) & startYear >= 1990)
 
 # 4. SAVE INTERMEDIATE FILE
