@@ -60,9 +60,9 @@ If you want to reproduce the analysis, run the scripts in the following order:
 | 6 | `06_model_assumptions.R` | `processed_director_data.csv` | Assumptions check |
 | 7 | `07_regression_models.R` | `processed_director_data.csv` | Regression tables |
 | 8 | `08_robustness_checks.R` | `processed_director_data.cs` | Robustness check results |
-| 9 | `09_gender_changes.R` | `regression_data_long.csv` + `regression_data_long_FIXED.csv` | Identifies directors who's gender where changed |
+| 9 | `09_gender_changes.R` | `regression_data_long.csv` + `regression_data_long_FIXED.csv` | Identifies directors who's gender were changed |
 
-`regression_data_long_FIXED.csv` is a manually corrected version of `regression_data_long.csv`. The correction involved reclassifying a small number of directors whose gender had been incorrectly assigned by the automatic babynames lookup. `09_gender_changes.R`obtains the director's name who's gender where changed. 
+`regression_data_long_FIXED.csv` is a manually corrected version of `regression_data_long.csv`. The correction involved reclassifying a small number of directors whose gender had been incorrectly assigned by the automatic babynames lookup. `09_gender_changes.R`obtains the director's name who's gender were changed. 
 
 The final processed dataset is `processed_director_data.csv`
 
